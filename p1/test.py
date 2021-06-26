@@ -18,14 +18,14 @@ class MyTestCase(unittest.TestCase):
     def test_examples1(self):
         # twoSum1
         for i, Case in enumerate(self.cases_example):
-            with self.subTest(f'twoSum1: failed case: {i}'):
+            with self.subTest(f'twoSum1: case: {i}'):
                 act = self.solution.twoSum1(Case.nums, Case.target)
                 self.assertEqual(act, Case.expect)
 
     def test_examples2(self):
         # twoSum2
         for i, Case in enumerate(self.cases_example):
-            with self.subTest(f'twoSum2: failed case: {i}'):
+            with self.subTest(f'twoSum2: case: {i}'):
                 act = self.solution.twoSum2(Case.nums, Case.target)
                 self.assertEqual(act, Case.expect)
 
