@@ -89,6 +89,25 @@ class MyTestCase(unittest.TestCase):
                 act = self.solution.mergeTwoLists2(Case.l1, Case.l2)
                 self.assertEqual(self.solution.listnode_to_list(act), self.solution.listnode_to_list(Case.expect))
 
+    # mergeTwoLists3
+    def test_examples3(self):
+        for i, Case in enumerate(self.cases_example):
+            with self.subTest(f'case: {i}'):
+                act = self.solution.mergeTwoLists3(Case.l1, Case.l2)
+                self.assertEqual(self.solution.listnode_to_list(act), self.solution.listnode_to_list(Case.expect))
+
+    def test_others3(self):
+        for i, Case in enumerate(self.cases_other):
+            with self.subTest(f'case: {i}'):
+                act = self.solution.mergeTwoLists3(Case.l1, Case.l2)
+                self.assertEqual(self.solution.listnode_to_list(act), self.solution.listnode_to_list(Case.expect))
+
+    def test_mine3(self):
+        for i, Case in enumerate(self.cases_mine):
+            with self.subTest(f'case: {i}'):
+                act = self.solution.mergeTwoLists3(Case.l1, Case.l2)
+                self.assertEqual(self.solution.listnode_to_list(act), self.solution.listnode_to_list(Case.expect))
+
 
 if __name__ == '__main__':
     unittest.main()
