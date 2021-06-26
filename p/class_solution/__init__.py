@@ -1,2 +1,4 @@
-def print_text():
-    print(f'Hello World')
+class Solution:
+    def print_text(self):
+        print(f'Hello World')
+        pass
