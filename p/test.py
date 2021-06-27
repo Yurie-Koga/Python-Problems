@@ -15,9 +15,10 @@ class MyTestCase(unittest.TestCase):
             self.Case([3, 3], 6, [0, 1]),
         ]
 
+    # twoSum1
     # def test_examples1(self):
     #     for i, Case in enumerate(self.cases_example):
-    #         with self.subTest(f'twoSum1: failed case: {i}'):
+    #         with self.subTest(f'twoSum1: case: {i}'):
     #             act = self.solution.print_text(Case.nums, Case.target)
     #             self.assertEqual(act, Case.expect)
 
